@@ -1,0 +1,35 @@
+INSTALLING MYSQL_CONNECTOR SOLUTION:
+
+Before you install, it is important to run update and upgrade;
+
+sudo apt-get update
+sudo apt-get upgrade
+
+Either install connector for Python 2;
+
+sudo apt-get -y install python-mysql.connector
+
+Or install connector for Python 3;
+
+sudo apt-get -y install python3-mysql.connector
+
+==========================================================================================
+Steps:
+1) Create MySQL table for WildlifeData
+	- Id
+	-AnimalName
+	-AirTemp
+	-Color
+	-OtherFeatures
+	-DateTimeOfImageCapture
+	-LocationWhereAnimalSpotted
+
+create database WildlifeDB
+	
+create table WildLifeData ( id int(11) unsigned auto_increment primary key not null, Animalname varchar(200) not null, Airtemperature varchar(50) null, Color varchar(100) null, Otherfeatures varchar(1000) null, DateTimeOfImageCapture varchar(100) null, LocationOfAnimal varchar (500) null);	
+select * from WildLifeData
+
+C:\Python34\python.exe	
+
+INSERT INTO WildLifeData ( Animalname, Airtemperature, Color, Otherfeatures, DateTimeOfImageCapture, LocationOfAnimal) VALUES ('1', 'Tiger', '30 Degress', 'Black', 'OtherDescription of Animal', '05/30/2017 20:20', 'Cloud Forest' );
+

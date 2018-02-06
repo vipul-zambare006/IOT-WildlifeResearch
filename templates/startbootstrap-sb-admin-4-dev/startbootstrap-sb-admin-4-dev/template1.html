@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>{{ title }}</title>
+</head>
+<body>
+    <h1>{{ title }}</h1>
+    <table border="solid">
+        {% for t in products %}
+        <tr>
+            <td><a href="product/{{ t.0 }}">{{ t.0 }}</a></td>
+            <td>{{ t.1 }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
+
+
+{% for t in animals %}
+<div class="card mb-3">
+    <a href="#">
+        <img class="card-img-top img-fluid w-100" src="images/tiger.jpg" alt="">
+    </a>
+    <div class="card-block">
+        <h6 class="card-title mb-1">Animal Class:<a href="#">{{ t.0 }}</a></h6>  <!-- Animal Name-->
+        <p class="card-text small">Location : {{ t.1 }}<a href="#">#Singapore</a></p>
+    </div>
+    <hr class="my-0">
+    <div class="card-block py-2 small">
+        <a class="mr-3 d-inline-block" id="btnDetails" href="#">
+            <i class="fa fa-fw fa-share"></i> Details
+        </a>
+    </div>
+</div>
+{% endfor %}
