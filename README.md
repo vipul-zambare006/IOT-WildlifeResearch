@@ -1,4 +1,4 @@
-# Wild life research POC using IOT(Internet of things):
+# Wildlife research POC using IOT(Internet of things):
 
 ## Objective:
 
